@@ -165,8 +165,8 @@ ENABLE_VENDOR_RIL_SERVICE := true
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
 # SELinux
-include device/qcom/sepolicy-legacy-um/SEPolicy.mk
-BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
+#BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
+BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy-minimal
 
 # Treble
 BOARD_VNDK_VERSION := current
