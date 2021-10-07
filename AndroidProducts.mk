@@ -1,2 +1,2 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/pixys_X01AD.mk
+    $(LOCAL_DIR)/aosp_X01AD.mk
