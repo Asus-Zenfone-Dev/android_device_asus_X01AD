@@ -51,7 +51,6 @@ TARGET_KERNEL_VERSION := 4.9
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/Image.gz-dtb
 PRODUCT_COPY_FILES += \
     $(TARGET_PREBUILT_KERNEL):kernel
-PRODUCT_VENDOR_KERNEL_HEADERS := device/asus/X01AD-kernel/89xx/kernel-headers    
 
 # ANT
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"

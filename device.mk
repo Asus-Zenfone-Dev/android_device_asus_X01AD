@@ -16,6 +16,8 @@
 
 $(call inherit-product, vendor/asus/X01AD/X01AD-vendor.mk)
 
+PRODUCT_VENDOR_KERNEL_HEADERS := device/asus/X01AD-kernel/89xx/kernel-headers    
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
