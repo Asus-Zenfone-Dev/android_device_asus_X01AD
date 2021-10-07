@@ -1,7 +1,7 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/dot_X01AD.mk
+    $(LOCAL_DIR)/aosp_X01AD.mk
 
 COMMON_LUNCH_CHOICES := \
-    dot_X01AD-eng \
-    dot_X01AD-user \
-    dot_X01AD-userdebug      
+    aosp_X01AD-eng \
+    aosp_X01AD-user \
+    aosp_X01AD-userdebug      

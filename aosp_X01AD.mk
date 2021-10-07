@@ -12,14 +12,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 # Inherit from onclite device
 $(call inherit-product, device/asus/X01AD/device.mk)
 
-# Inherit some common dotOS stuff
-$(call inherit-product, vendor/dot/config/common.mk)
-
-#Boot animation
-TARGET_BOOT_ANIMATION_RES := 720
-
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := dot_X01AD
+PRODUCT_NAME := aosp_X01AD
 PRODUCT_DEVICE := X01AD
 PRODUCT_BRAND := Asus
 PRODUCT_MODEL := ASUS-X01AD

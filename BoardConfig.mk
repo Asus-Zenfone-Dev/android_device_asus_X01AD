@@ -156,7 +156,6 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # Qualcomm
 BOARD_USES_QCOM_HARDWARE := true
-OVERRIDE_QCOM_HARDWARE_VARIANT := msm8996-los
 
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
@@ -167,9 +166,6 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 # SELinux
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
-
-# Soong namespaces
-PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
 
 # Treble
 BOARD_VNDK_VERSION := current
