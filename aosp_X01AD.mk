@@ -9,11 +9,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-# Inherit from onclite device
+# Inherit from asus device
 $(call inherit-product, device/asus/X01AD/device.mk)
 
 #Boot animation
 TARGET_BOOT_ANIMATION_RES := 720
+
+# Inherit PixelExperience stuff
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+
+# PixelExperience specifics
+TARGET_GAPPS_ARCH := arm64
+TARGET_BOOT_ANIMATION_RES := 720
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := aosp_X01AD
